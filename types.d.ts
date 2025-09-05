@@ -4,5 +4,6 @@ declare namespace NodeJS {
         HOST?: string;
         PORT?: string;
         SECRET_KEY: string; // Must be defined
+        R3VOC_REPO_LOCATION: string; // Must be defined
     }
 }

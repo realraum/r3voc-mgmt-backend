@@ -63,6 +63,7 @@ export default tseslint.config(
             'no-nested-ternary': 'off',
             'no-confusing-arrow': 'off',
             'import/prefer-default-export': 'off',
+            '@typescript-eslint/no-floating-promises': 'error',
 
             'prettier/prettier': [
                 'error',

@@ -9,8 +9,10 @@
     "@types/cookie-parser": "^1.4.9",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
+    "@types/express-fileupload": "^1.5.1",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.0.0",
     "@types/node": "^24.3.1",
     "eslint": "^9",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -37,14 +39,16 @@
   },
   "dependencies": {
     "argon2": "^0.44.0",
+    "commander": "^14.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.1",
-    "sqlite3": "^5.1.7",
-    "commander": "^14.0.0"
+    "multer": "^2.0.2",
+    "sqlite3": "^5.1.7"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
@@ -52,6 +56,7 @@
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "generate:schema": "node schedule.mjs",
+    "typecheck": "tsc --noEmit",
     "postinstall": "yarn generate:schema"
   }
 }

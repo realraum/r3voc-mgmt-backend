@@ -1,0 +1,94 @@
+{
+  "$schema": "https://c3voc.de/schedule/schema.json",
+  "schedule": {
+    "generator": {
+      "name": "voctoimport",
+      "version": "0.2"
+    },
+    "conference": {
+      "acronym": "realraum",
+      "title": "realraum",
+      "time_zone_name": "Europe/Berlin",
+      "rooms": [
+        {
+          "name": "LoTHR",
+          "guid": "6fd76e23-e8d5-5e67-89b0-716f86f9740a"
+        }
+      ],
+      "days": [
+        {
+          "index": 1,
+          "date": "2025-04-04",
+          "rooms": {
+            "LoTHR": [
+              {
+                "guid": "6b097c7a-c3cf-44da-bb53-aaa103deff9e",
+                "type": "lecture",
+                "id": 56370,
+                "slug": "realraum-56370-diy-revival-of-an-api-200",
+                "title": "DIY Revival of an API 2000 Tandem Mass Spectrometer",
+                "subtitle": "",
+                "date": "2025-04-04T19:00:00+02:00",
+                "start": "19:00",
+                "duration": "02:10",
+                "room": "LoTHR",
+                "track": "",
+                "language": "en",
+                "logo": "",
+                "abstract": "",
+                "description": "Ever wondered if you could bring an old mass spectrometer back to life? Well, that’s exactly what this project was all about! With a mix of DIY repairs, scavenged parts, and a whole lot of learning, the API2000 tandem mass spectrometer got a second chance.\r\n\r\nFrom fixing a corroded interface heater to tracking down the right software (hello, Windows XP nostalgia!), every step was a challenge. But in the end, the first tests were a success – including injecting coffee to confirm the presence of caffeine (because, of course, coffee had to be involved).\r\n\r\nThe journey doesn’t stop here. Next steps? Diving into deeper mathematical concepts, experimenting with blood analysis, and pushing the API2000 to its limits.",
+                "recording": {
+                  "optout": false,
+                  "url": "https://import.c3voc.de/videos/90b31881-eb57-4fa3-9411-4ae5c55a59d0.mkv"
+                },
+                "persons": [
+                  {
+                    "id": 1,
+                    "public_name": "Sally"
+                  }
+                ],
+                "url": "https://gry.sh/posts/dgms2025/",
+                "video_download_url": "https://import.c3voc.de/videos/90b31881-eb57-4fa3-9411-4ae5c55a59d0.mkv"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "date": "2025-09-25",
+          "rooms": {
+            "LoTHR": [
+              {
+                "guid": "3dfa1cff-44d5-43c9-ac1c-9d72a0beaba7",
+                "type": "lecture",
+                "id": 56371,
+                "slug": "realraum-56371-kalman-filter-und-sensor",
+                "title": "Kalman Filter und Sensor Fusion",
+                "subtitle": "",
+                "date": "2025-09-25T19:00:00+02:00",
+                "start": "19:00",
+                "duration": "01:00",
+                "room": "LoTHR",
+                "track": "",
+                "language": "en",
+                "logo": "",
+                "abstract": "",
+                "description": "",
+                "recording": {
+                  "optout": false
+                },
+                "persons": [
+                  {
+                    "id": 2,
+                    "public_name": "Tbd"
+                  }
+                ],
+                "url": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

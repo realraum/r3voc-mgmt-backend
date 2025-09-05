@@ -42,7 +42,7 @@ userRouter.post(
 
         const token = jwt.sign(
             { username: user.username },
-            process.env.SECRET_KEY,
+            process.env.SECRET_KEY!,
             {
                 expiresIn: '24h',
             },
@@ -64,7 +64,7 @@ userRouter.post('/logout', (req, res: express.Response<ApiResponse>) => {
 
 userRouter.get(
     '/info',
-    (req, res: express.Response<ApiResponse<ApiUser | null>>) => {
+    async (req, res: express.Response<ApiResponse<ApiUser | null>>) => {
         const token = req.cookies[tokenCookie];
 
         if (!token) {
@@ -76,11 +76,11 @@ userRouter.get(
         }
 
         try {
-            const decoded = jwt.verify(token, process.env.SECRET_KEY) as {
+            const decoded = jwt.verify(token, process.env.SECRET_KEY!) as {
                 username: string;
             };
 
-            const user = getUserByUsername(decoded.username);
+            const user = await getUserByUsername(decoded.username);
 
             if (!user) {
                 res.status(401).json({
