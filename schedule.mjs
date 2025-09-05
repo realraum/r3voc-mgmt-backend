@@ -1,10 +1,11 @@
-import { compileFromFile } from "json-schema-to-typescript";
-import fs from 'fs';
+import { compileFromFile } from 'json-schema-to-typescript';
+import fs from 'node:fs';
 
 const schemaName = '.schedule.schema.json';
 
 // If it does not exist, download it
 if (!fs.existsSync(schemaName)) {
+    console.log('Downloading schema...');
     const url = await fetch('https://c3voc.de/schedule/schema.json');
     const schema = await url.text();
     fs.writeFileSync(schemaName, schema);

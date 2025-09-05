@@ -51,9 +51,7 @@
     "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
-    "generate:schema:fetch": "curl https://c3voc.de/schedule/schema.json -o .schedule.schema.json",
-    "generate:schema:json2ts": "node schedule.mjs",
-    "generate:schema": "yarn generate:schema:fetch && yarn generate:schema:json2ts",
+    "generate:schema": "node schedule.mjs",
     "postinstall": "yarn generate:schema"
   }
 }
