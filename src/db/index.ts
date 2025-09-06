@@ -1,7 +1,8 @@
 import argon2 from 'argon2';
 import sqlite from 'sqlite3';
+import pathlib from 'node:path';
 
-const path = 'db.sqlite';
+const path = pathlib.join('uploads', 'db.sqlite');
 
 const isCli = process.argv.length > 2;
 
