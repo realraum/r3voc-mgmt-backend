@@ -1,3 +1,3 @@
-# r3voc-mgmt-backend
+# ATTENTION
 
-You can find the frontend here: https://github.com/realraum/r3voc-mgmt-ui
+## This is now a monorepo at https://github.com/realraum/r3voc
